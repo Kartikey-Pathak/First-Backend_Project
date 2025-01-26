@@ -1,6 +1,7 @@
 const express = require("express");
 require('./Mongoose_config');
 const path = require('path');  // Import the 'path' module
+const cors = require('cors');
 
 const products = require('./Mongoose_collection');
 
