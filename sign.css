@@ -1,0 +1,152 @@
+.page{
+    height: 78vh;
+    width: 55vmin;
+    box-shadow:6px 6px 6px 6px rgba(0.1, 0, 0, 0.1);
+    border-radius: 1.3vmin;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 7vmin;
+}
+.info{
+    display: flex;
+   flex-wrap: wrap;
+   width: 18vmin;
+   align-items: center;
+   justify-content: center;
+   gap: 2vmin;
+}
+a{
+    text-decoration: none;
+    z-index: 10;
+    
+}
+.txt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vmin;
+}
+.txt h1{
+    margin-left: 4vmin;
+    margin-top: 4vmin;
+    font-size: 6vmin;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.txt h4{
+    color: grey;
+    font-weight: bolder;
+    margin-left: 4vmin;
+    margin-top: -1vmin;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.takes{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 70vmin;
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4vmin;
+   
+}
+input{
+    height: 8vmin;
+    width: 50vmin;
+    display: flex;
+    margin: 4vmin;
+
+    border-radius: 1.6vmin;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+button{
+    height: 8vmin;
+    width: 50vmin;
+    border-radius: 5vmin;
+    margin-left: 4vmin;
+    background-color: #0a66c2;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+}
+button:hover{
+    transition: 0.2s;
+    background-color: #0557a8;
+    color: white;
+    cursor: pointer;
+
+}
+
+i{
+    color: rgb(146, 141, 141);
+    position: relative;
+    left: 50vmin;
+    bottom: 9.6vmin;
+}
+i:hover{
+    color: rgba(0, 0, 0, 0.692);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.view{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Make the form inputs stack vertically on smaller screens */
+@media (max-width: 768px) {
+  
+    .page{
+        width: 20rem;
+        height: 36rem;
+        position: relative;
+        top: 2rem;
+    }
+    .txt h1{
+        font-size: 3rem;
+    }
+    .txt h4{
+        font-size: 0.9rem;
+    }
+    .txt{
+        width: 23rem;
+    }
+    .takes{
+        position: relative;
+        top: 3rem;
+    }
+    input{
+        width: 17rem;
+        height: 2.9rem;
+    }
+    i{
+        position: relative;
+        left: 16.4rem;
+        bottom: 3rem;
+        font-size: 1.2rem;
+    }
+   button{
+    position: relative;
+    top: 3rem;
+    width: 17rem;
+    height: 3rem;
+   }
+  .info{
+    width: 19rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+}
