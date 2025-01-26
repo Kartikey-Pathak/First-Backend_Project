@@ -14,17 +14,6 @@ app.use(express.static(path.join(__dirname)));
 // Set EJS as the templating engine
 app.set('view engine', 'ejs');
 
-const corsOptions = {
-  origin: "https://first-backend-project-ashy.vercel.app/",  // Allow only your frontend to access the backend
-  methods: "GET,POST",  // Allow only GET and POST methods
-};
-
-app.use(cors(corsOptions));
-
-// Serve the index.html file on the root route
-app.get("/", (req, resp) => {
-    resp.sendFile(path.join(__dirname, 'index.html')); // Path to your index.html
-});
 
 app.post("/create", async (req, resp) => {
     let data = new products(req.body);
