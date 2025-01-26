@@ -21,6 +21,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+// Serve the index.html file on the root route
+app.get("/", (req, resp) => {
+    resp.sendFile(path.join(__dirname, 'index.html')); // Path to your index.html
+});
+
 app.post("/create", async (req, resp) => {
     let data = new products(req.body);
     let res = await data.save();
