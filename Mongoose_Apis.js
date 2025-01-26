@@ -41,6 +41,8 @@ app.post("/search",async (req,resp)=>{
     }
 });
 
+module.exports = app;
+
 
 
 // app.get("/list", async (req, resp) => {
@@ -70,4 +72,4 @@ app.post("/search",async (req,resp)=>{
 //     resp.send(data);
 // });
 
-app.listen(5000);
+// app.listen(5000);
