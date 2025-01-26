@@ -13,6 +13,13 @@ app.use(express.static(path.join(__dirname)));
 // Set EJS as the templating engine
 app.set('view engine', 'ejs');
 
+const corsOptions = {
+  origin: "https://first-backend-project-ashy.vercel.app/",  // Allow only your frontend to access the backend
+  methods: "GET,POST",  // Allow only GET and POST methods
+};
+
+app.use(cors(corsOptions));
+
 app.post("/create", async (req, resp) => {
     let data = new products(req.body);
     let res = await data.save();
@@ -40,6 +47,9 @@ app.post("/search",async (req,resp)=>{
         resp.send("Inccorect Id Please Create Account");
     }
 });
+
+
+
 
 module.exports = app;
 
