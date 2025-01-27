@@ -1,15 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "Mongoose_Apis.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "Mongoose_Apis.js"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "Mongoose_Apis.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": {
+    "Mongoose_Apis.js": {
+      "maxDuration": 180
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Mongoose_Apis.js"
+    }
+  ]
+}
