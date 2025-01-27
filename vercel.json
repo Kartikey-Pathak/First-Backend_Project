@@ -11,9 +11,5 @@
         "src": "/(.*)",
         "dest": "Mongoose_Apis.js"
       }
-    ],
-    "files": [
-      "*",
-      "views/*"            
     ]
   }
