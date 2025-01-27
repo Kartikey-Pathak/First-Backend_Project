@@ -1,0 +1,163 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+nav{
+    scroll-behavior: smooth;
+}
+h1{
+    color: white;
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+svg{
+    color: #892CDC;
+    height: 2rem;
+    width: 2rem;
+}
+.nav{
+    display:flex;
+    width:93rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav h2{
+    color: white;
+    font-size: 1.3rem;
+}
+.box{
+    width: 32rem;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    margin-right: 0.4rem;
+    margin-top: 3rem;
+}
+ul{
+    display: flex;
+    width: 55rem;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin-left: 20rem;
+}
+a{
+    text-decoration: none;
+    font: bolder;
+    font-size: 1rem;
+    background-color: rgba(164, 163, 163, 0.395);
+    color: white;
+
+    padding: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.8rem;
+}
+a:hover{
+    cursor: pointer;
+     background-color: transparent;
+     transition: 0.4s;
+}
+#code{
+    height: 3rem;
+    width: 5rem;
+    background-color: #892CDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+#node,#mongo{
+    width: 10rem;
+    height: 6rem;
+}
+.logos{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:37rem;
+}
+#code{
+    height: 30rem;
+    width: 65rem;
+    background-color: black;
+    margin-top: 4rem;
+}
+.codebase h1{
+    position: relative;
+    bottom: 15rem;
+    right: 17rem;
+    font-size: 3.5rem;
+}
+.codebase a{
+    background-color: #892CDC;
+    padding: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    position: relative;
+    bottom: 8rem;
+    right: 12rem;
+}
+.codebase a:hover{
+     transition: 0.4s;
+     cursor: pointer;
+     background-color: rgb(160, 158, 158);
+}
+.code{
+    background-color: rgba(128, 128, 128, 0.07);
+    height: 40rem;
+    width: 55rem;
+    margin-left: 3rem;
+   border-top: 3rem solid rgb(29, 29, 29);
+   display: flex;
+   line-height: 3rem;
+   position: relative;
+   bottom: 6rem;
+}
+.code p{
+    font-family: 'Courier New', Courier, monospace;
+    color:#6a9955;
+    font-weight: bolder;
+}
+.code h1{
+   
+    position: relative;
+    bottom: 11rem;
+    font-size: 1.2rem;
+  
+}
+.iconify--bx{
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    bottom: 11.3rem;
+    left: 48rem;
+    color: grey;
+}
+.iconify--bx:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #892CDC;
+}
+.fa-github{
+    color: white;
+    position: relative;
+    left: 4rem;
+    font-size: 1.5rem;
+    top: 0.3rem;
+}
+footer{
+    height: 30rem;
+    width: 70rem;
+    border-top: 3rem solid rgb(29, 29, 29);
+    background-color: rgba(128, 128, 128, 0.07);
+}
