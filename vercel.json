@@ -8,7 +8,7 @@
   ],
   "functions": {
     "Mongoose_Apis.js": {
-      "maxDuration": 60
+      "maxDuration": 180
     }
   },
   "routes": [
