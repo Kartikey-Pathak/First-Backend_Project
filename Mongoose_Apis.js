@@ -18,9 +18,9 @@ app.use(express.static(path.join(__dirname)));
 // Set EJS as the templating engine
 app.set('view engine', 'ejs');
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
+app.get("/",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,'index.html'));
+})
 
 
 app.post("/create", async (req, resp) => {
