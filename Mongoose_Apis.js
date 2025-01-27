@@ -24,7 +24,7 @@ app.post("/create", async (req, resp) => {
     let data = new products(req.body);
     let res = await data.save();
     console.log(res);
-    resp.sendFile(path.join(__dirname,'create.html'));
+    // resp.sendFile(path.join(__dirname,'create.html'));
 });
 
 
