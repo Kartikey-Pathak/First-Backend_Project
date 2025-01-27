@@ -6,11 +6,6 @@
       "use": "@vercel/node"
     }
   ],
-  "functions": {
-    "Mongoose_Apis.js": {
-      "maxDuration": 180
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
