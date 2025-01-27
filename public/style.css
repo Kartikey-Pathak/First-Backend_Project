@@ -1,0 +1,239 @@
+body{
+    background-color: #191b1b;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 12vmin;
+    width: 200vmin;
+    flex-wrap: wrap;
+   
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vmin;
+}
+.main{
+
+    height: 93vh; /* Viewport height */
+    width: 80%;   /* Percentage of the screen width */
+    margin: 0 auto; /* Centering */
+    background-color: rgba(255, 255, 255, 0.137);
+    box-shadow:6px 6px 6px 6px rgba(2, 153, 253, 0.1);
+    border-radius: 5vmin;
+    margin-top: 1rem;
+
+    border: 4px solid blue;
+    animation-name: glow;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.bord{
+    height: 93vh; /* Viewport height */
+    width: 80%;   /* Percentage of the screen width */
+}
+@keyframes glow{
+    0%{
+        border: 4px solid rgb(0, 162, 255);
+        box-shadow:6px 6px 6px 3px rgba(2, 157, 253, 0.484);
+    }
+    50%{
+        border: 4px solid rgb(212, 0, 255);
+        box-shadow:6px 6px 6px 3px rgba(211, 2, 253, 0.67);
+    }
+    75%{
+        border: 4px solid rgb(255, 0, 119);
+        box-shadow:6px 6px 6px 3px rgba(253, 2, 194, 0.758);
+    }
+    100%{
+        border: 4px solid rgb(0, 255, 213);
+        box-shadow: 6px 6px 6px 3px rgba(2, 153, 253, 0.9);
+    }
+}
+h1{
+    font-size: 6vmin;
+    font-weight: bolder;
+    color: white;
+}h4{
+  color: grey;
+}
+.box2{
+
+    height: 25vmax;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    height: 55vmin;
+    gap: 10vmin;
+
+    
+}
+.form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vmin;
+    margin-left: 8vmin;
+
+    width: 40vmin;
+    height: 7vmin;
+   border: none;
+    border-radius: 1vmin;
+    font-size: medium;
+    font-weight: 600 ;
+    color:black;
+
+
+    background-color: rgb(241, 241, 241);
+
+}
+i{
+    color: rgb(146, 141, 141);
+    position: relative;
+    left: 44vmin;
+    bottom: 4.6vmin;
+}
+i:hover{
+    color: rgba(0, 0, 0, 0.692);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.form button{
+    position: relative;
+    bottom: 38vmin;
+    width: 20vmin;
+    height: 6vmin;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 4vmin;
+    left: 30vmin;
+    background-color: #BFECFF;
+    /* box-shadow:6px 6px 6px 6px rgba(0.1, 0, 0, 0.1); */
+    border: none;
+}
+.form button:hover{
+    background-color: #83a4b39e;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+}
+.sin{
+    margin-left: 80vmin;
+    width: 20vmin;
+    height: 6vmin;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 4vmin;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    /* box-shadow:6px 6px 6px 6px rgba(0.1, 0, 0, 0.1); */
+   position: relative;
+   bottom: 11vmin;
+    
+}
+.sin:hover{
+    transition: 0.3s;
+    background-color: rgba(180, 177, 177, 0.334);
+    cursor: pointer;
+}
+.sin a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: 400;
+}
+.msg{
+    border-bottom: 10px solid greenyellow;
+    border-right: 8px solid greenyellow;
+    border-radius: 5vmin;
+    height: 40vmin;
+    width: 60vmin;
+    z-index: 1;
+    position: relative;
+    bottom: 30vmin;
+    background-color: white;
+}
+img{
+    position: relative;
+    left: 25vmin;
+    top: 2vmin;
+}
+.msg-txt h1{
+    color: black;
+}
+.msg-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 59vmin;
+    margin-left: 0.5vmin;
+}
+.msg-txt h4{
+    color: gray;
+}
+.hide{
+visibility: hidden;
+}
+
+
+/* Make the form inputs stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .form input {
+        width: 18rem;   /* Full width on smaller devices */
+        margin-top:2.4rem;
+        position: relative;
+        right: 1rem;
+        height: 2.5rem;
+    }
+    .form{
+        position: relative;
+        top:2rem;
+    }
+
+    .form button {
+        width: 7rem;   /* Button takes full width */
+        height: 2.5rem;
+        position: relative;
+        bottom: 39vmin;
+        left: 11rem;
+
+    }
+
+    .sin {
+        width: 7rem;
+        
+        height: 2.5rem;
+        position: relative;
+        bottom: 8rem;
+        right: 15rem;
+        
+    }
+    h4{
+        font-size: 0.38rem;
+        margin-left: 0.3rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .main{
+        height: 75vh;
+        margin-top: 5rem;
+        width: 21rem;
+    }
+    i{
+        margin-left: 6.7rem;
+        position: relative;
+        bottom: 1.8rem;
+        font-size: 1.20rem;
+    }
+}
