@@ -2,8 +2,7 @@ const express = require("express");
 // require('./Mongoose_config');
 
 const mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://dbkartik:dbkartik7070@created-data.xpiuo.mongodb.net/?retryWrites=true&w=majority&appName=created-data");
-
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const path = require('path');  // Import the 'path' module
 
