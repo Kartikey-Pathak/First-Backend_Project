@@ -2,6 +2,9 @@ const express = require("express");
 // require('./Mongoose_config');
 
 const mongoose=require('mongoose');
+// Use the MONGO_URI from environment variables
+const mongoURI = process.env.MONGO_URI;
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const path = require('path');  // Import the 'path' module
