@@ -1,6 +1,8 @@
 const express = require("express");
 // require('./Mongoose_config');
 
+require("dotenv").config();
+
 const mongoose=require('mongoose');
 require('./Mongoose_config');
 
