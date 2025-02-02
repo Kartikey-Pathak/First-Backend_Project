@@ -22,9 +22,9 @@ app.set('view engine', 'ejs');
 app.get("/",(req,resp)=>{
     resp.sendFile(path.join(__dirname,'index.html'));
 })
-app.get("/create.html",(req,resp)=>{
-    resp.sendFile(path.join(__dirname,'create.html'));
-})
+// app.get("/create.html",(req,resp)=>{
+//     resp.sendFile(path.join(__dirname,'create.html'));
+// })
 
 
 app.post("/create", async (req, resp) => {
